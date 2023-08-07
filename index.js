@@ -9,7 +9,7 @@ app.use(cors({
 }))
 app.use(Router)
 
-const PORT=5245;
+const PORT=5006;
 
 app.listen(PORT, async ()=>{
     try {
