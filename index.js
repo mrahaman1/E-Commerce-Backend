@@ -2,12 +2,15 @@ const express=require("express");
 const Router=require("./Routes/route")
 const app = express();
 const connection = require("./Database/connection")
+const accessoriesapi = require("./Documents/Accessories")
 app.use(express.json())
 const cors=require("cors")
+
 app.use(cors({
     origin:"*"
 }))
 app.use(Router)
+app.use("/",accessoriesapi);
 
 const PORT=5001;
 
