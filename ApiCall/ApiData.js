@@ -1,5 +1,5 @@
-const get =(req,res)=>{
-  res.send([
+const get = (request, response) => {
+    response.send([
     {
         id: 1,
         catagory: "Accessories",

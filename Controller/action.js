@@ -6,11 +6,11 @@ const jwt = require("jsonwebtoken")
 const JWT_SECRET = "mysecretkey"
 
 
-const allproduct = async (req,res)=>{
-   const result= await Product.find()
-   res.send(result)
-   res.end()
-}
+// const allproduct = async (req,res)=>{
+//    const result= await Product.find()
+//    res.send(result)
+//    res.end()
+// }
 
 
 const signup = async (req,res)=>{
@@ -128,4 +128,4 @@ const deleteall = async (req, res)=>{
 
 
 
-module.exports = {allproduct,signup,login,userdetails,addtocart,deleteproduct,deleteall}
+module.exports = {signup,login,userdetails,addtocart,deleteproduct,deleteall}
